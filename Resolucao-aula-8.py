@@ -16,9 +16,9 @@ nomes_turma3 = ['Adriana', 'Bernardo', 'Clara', 'Diego', 'Eliana', 'Felipe', 'Gi
 
 # Geração aleatória de notas para atribuição a cada aluno 
 np.random.seed(42)  # Para reprodutibilidade
-notas_turma1 = np.random.choice(['A', 'B', 'C'], len(nomes_turma1))
-notas_turma2 = np.random.choice(['A', 'B', 'C'], len(nomes_turma2))
-notas_turma3 = np.random.choice(['A', 'B', 'C'], len(nomes_turma3))
+notas_turma1 = np.random.choice(['A', 'B', 'C', np.random.randint(0, 11)], len(nomes_turma1))
+notas_turma2 = np.random.choice(['A', 'B', 'C', np.random.randint(0, 11)], len(nomes_turma2))
+notas_turma3 = np.random.choice(['A', 'B', 'C', np.random.randint(0, 11)], len(nomes_turma3))
 
 # Criar DataFrames separados para cada turma
 df_turma1 = pd.DataFrame({
